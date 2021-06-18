@@ -1,5 +1,4 @@
-﻿using MiddleLayout_Semiconductor.Module;
-using Prism.Ioc;
+﻿using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
 using System;
@@ -9,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace MiddleLayout_Semiconductor
+namespace MiddleLayout_Tool
 {
     public class BootStrapper : Prism.Unity.PrismBootstrapper
     {
@@ -32,7 +31,7 @@ namespace MiddleLayout_Semiconductor
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             base.ConfigureModuleCatalog(moduleCatalog);
-            moduleCatalog.AddModule<MainModule_wafer>();
+            moduleCatalog.AddModule<MainModule>();
             
         }
 

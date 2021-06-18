@@ -7,7 +7,7 @@ namespace MiddleLayout_Semiconductor
     /// <summary>
     /// Interaction logic for MainController
     /// </summary>
-    public partial class MainController : UserControl,IModule
+    internal partial class MainController : UserControl,IModule
     {
         public MainController()
         {

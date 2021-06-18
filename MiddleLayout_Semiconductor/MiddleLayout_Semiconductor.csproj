@@ -1,6 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
     <TargetFramework>net472</TargetFramework>
     <UseWPF>true</UseWPF>
     <AssemblyName>MiddleLayout_Semiconductor</AssemblyName>
@@ -8,5 +7,8 @@
   <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="4.0.0-ci2206" />
     <PackageReference Include="Prism.Unity" Version="8.0.0.1909" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LayoutBase\LayoutBase.csproj" />
   </ItemGroup>
 </Project>

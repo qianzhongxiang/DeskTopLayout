@@ -40,7 +40,7 @@ namespace MiddleLayout_Semiconductor
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             base.ConfigureModuleCatalog(moduleCatalog);
-            moduleCatalog.AddModule<MainModule>();
+            moduleCatalog.AddModule<MainModule_wafer>();
         }
     }
 

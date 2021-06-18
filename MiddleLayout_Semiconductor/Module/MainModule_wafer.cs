@@ -9,15 +9,12 @@ using System.Threading.Tasks;
 
 namespace MiddleLayout_Semiconductor.Module
 {
-    class MainModule : IModule
+    public class MainModule_wafer : IModule
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
             var region = containerProvider.Resolve<IRegionManager>();
-            region.RegisterViewWithRegion("MainViewerRegion", typeof(MainViewer));
-            region.RegisterViewWithRegion("MainControllerRegion", typeof(MainController));
-
-            region.RegisterViewWithRegion("main_view",typeof(ViewItem<testui>));
+            region.RegisterViewWithRegion("MainRegion", typeof(Main_Wafer));
 
             //region.RegisterViewWithRegion("main_view",typeof(ViewItem<testui>));
             //region.RegisterViewWithRegion("main_view",typeof(ViewItem<testui>));

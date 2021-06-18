@@ -7,14 +7,12 @@ namespace MiddleLayout_Semiconductor
     /// <summary>
     /// Interaction logic for MainViewer
     /// </summary>
-    public partial class MainViewer : UserControl
+    internal partial class Main_Wafer : UserControl
     {
-        public MainViewer()
+        public Main_Wafer()
         {
             InitializeComponent();
         }
-
-       
     }
 
 

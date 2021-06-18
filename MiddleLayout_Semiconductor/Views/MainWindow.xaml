@@ -16,13 +16,16 @@
         <ResourceDictionary Source="../MaterialDictionary.xaml"></ResourceDictionary>
     </Window.Resources>
     <Grid>
-        <Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <!--<Grid.ColumnDefinitions>
             <ColumnDefinition Width="60" x:Name="col_menu_l"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="400"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <ContentControl Grid.Column="0" prism:RegionManager.RegionName="ToolRegion" />
-        <ContentControl Grid.Column="1" prism:RegionManager.RegionName="MainViewerRegion" />
-        <ContentControl Grid.Column="2" prism:RegionManager.RegionName="MainControllerRegion" />
+        </Grid.ColumnDefinitions>-->
+        <ContentControl  Grid.Row="0" prism:RegionManager.RegionName="MenuRegion" />
+        <ContentControl  Grid.Row="1" prism:RegionManager.RegionName="MainRegion" />
     </Grid>
 </Window>
